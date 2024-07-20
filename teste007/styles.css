@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do cabeçalho fixo */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo da seção de banner */
+#banner {
+    margin-top: 60px; /* Altura do cabeçalho fixo */
+    background: #ccc;
+    position: relative;
+}
+
+#banner .carousel {
+    position: relative;
+}
+
+#banner .carousel-item {
+    display: none;
+    width: 100%;
+}
+
+#banner .carousel-item.active {
+    display: block;
+}
+
+#banner .prev, #banner .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#banner .prev {
+    left: 10px;
+}
+
+#banner .next {
+    right: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+#services {
+    margin-top: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Estilo do formulário de contato */
+form {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+nav a:hover{
+    color: #b0afaf;
+}
