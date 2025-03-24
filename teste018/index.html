@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+
+    <h1>Criando um Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                Nome: <input type="text" name="nome" id="inome" required>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isxmas" value="M" required> <label for="isxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxfem" value="F" required><label for="isxfem">Feminino</label>
+                <input type="radio" name="sexo" id="isxtrans" required><label for="isxtrans">Transsexual</label>
+                <input type="radio" name="sexo" id="isxnada" required><label for="isxnada">Prefiro não dizer</label>
+            </p>
+            <p>
+                Telefone: <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" required>
+            </p>
+            <p>
+                E-mail: <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                Senha: <input type="password" name="senha" id="isenha" minlength="8" maxlength="16">
+            </p>
+            <p>
+                Data de nascimento: <input type="date" name="data" id="idata" >
+            </p>
+            <p>
+                Horario de nascimento: <input type="time" name="hora" id="ihora" >
+            </p>
+            <p>
+                Dia e horario do seu login: <input type="datetime-local" name="datahora" id="idatahora" >
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gostos pessoais</legend>
+
+            <p>
+                Cor favorita: <input type="color" name="cor" id="icor" required>
+            </p>
+            <p>
+                <p>
+                    Esportes que você gosta: 
+                    <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol </label>
+                    <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Volei </label><input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete </label><input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis </label>
+                </p>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
